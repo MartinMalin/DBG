@@ -1,0 +1,7 @@
+<app-go-back></app-go-back>
+<app-dbg-table [title]="title" [isLoadingResults]="isLoadingResults" [dataSource]="series"
+    [tableColumns]="displayedColumns" [showSelection]="showSelection" [filter]="true"
+    (selectionChangedHandler)="selection$.next($event?.selected)">
+    <button mat-button color="primary" (click)="submitToEstimator()"
+        [disabled]="selection$.value.length === 0">Submit</button>
+</app-dbg-table>

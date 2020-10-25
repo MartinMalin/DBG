@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseUrl: 'https://thingproxy.freeboard.io/fetch/https://api.developer.deutsche-boerse.com/prod/prisma-margin-estimator-2-0/2.0.0',
+  apiKey: '20eda8ee-6d8c-4cdd-9375-864b0067182b',
 };
 
 /*

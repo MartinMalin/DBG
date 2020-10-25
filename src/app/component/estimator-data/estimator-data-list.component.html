@@ -1,0 +1,20 @@
+<app-go-back></app-go-back>
+<app-dbg-table [isLoadingResults]="false" [dataSource]="estimatorWithoutArrays" [hidePaginator]="true"
+    [tableColumns]="estimatorDatacolumns">
+</app-dbg-table>
+<mat-tab-group [selectedIndex]="selectedIndex">
+    <mat-tab label="Drilldowns">
+        <ng-template matTabContent>
+            <app-dbg-table [isLoadingResults]="false" [filter]="true" [dataSource]="drildowns"
+                [tableColumns]="drildownColumns">
+            </app-dbg-table>
+        </ng-template>
+    </mat-tab>
+    <mat-tab label="Portfolio Margin">
+        <ng-template matTabContent>
+            <app-dbg-table [isLoadingResults]="false" [showSort]="true" [dataSource]="protfolioMargin"
+                [tableColumns]="protfolioMarginColumns">
+            </app-dbg-table>
+        </ng-template>
+    </mat-tab>
+</mat-tab-group>

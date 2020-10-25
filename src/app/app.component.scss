@@ -1,0 +1,10 @@
+.main-container {
+    position: relative;
+    min-height: 200px;
+    padding: 50px;
+}
+
+::ng-deep .toast-warning {
+    color:white;
+    background: #F44336 !important;
+}

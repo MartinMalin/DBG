@@ -1,0 +1,9 @@
+<app-dbg-table
+    [title]="title"
+    [filter]="true"
+    [isLoadingResults]="isLoadingResults"
+    [dataSource]="dataSource"
+    [tableColumns]="displayedColumns"
+    [showActionButton]="showActionButton"
+    (actionButtonNavigationHandler)="navigateFromButton($event)"
+></app-dbg-table>

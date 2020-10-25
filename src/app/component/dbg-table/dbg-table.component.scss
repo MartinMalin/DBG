@@ -1,0 +1,49 @@
+.capitalize {
+    text-transform: capitalize;
+}
+
+.header-title-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+table {
+    width: 100%;
+}
+  
+.main-table-container {
+    position: relative;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.mat-column-action {
+    text-align: center;
+}
+
+.mat-column-select {
+    overflow: initial;
+}
+
+.dbg-table-paginator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hide-paginator {
+    display: none;
+}
+
+.progress-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.mat-table__wrapper .mat-table {
+    min-width: auto !important;
+    width: 100% !important;
+}
